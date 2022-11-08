@@ -53,11 +53,39 @@
 
 
 
-const person ={
-    name:["Bob", "Smith"],
-    age: 32,
-    gender:"male",
-    interest: ["music, skiing"],
+///////////////////////// Objects
+// const person ={
+//     name:["Bob", "Smith"],
+//     age: 32,
+//     gender:"male",
+//     interest: ["music, skiing"],
 
-}
-console.log(`My name is ${person.name[0]} ${person.name[0]}. I am interested in${person.interest[0]} and ${person.interest[1]}.`)
+// };
+// console.log(`My name is ${person.name[0]} ${person.name[0]}. I am interested in${person.interest[0]} and ${person.interest[1]}.`)
+
+// for (let prop in person){
+//     console.log(`My ${prop} is ${person[prop]}`)
+// }
+
+let student1 = {
+    ID: "A00022",
+    GPA: 3.0,
+    program: "CIT"
+    };
+    let student2 = {
+    ID: "A01000",
+    GPA: 3.1,
+    program: "CST"
+    };
+    let student3 = {
+    ID: "A00114",
+    GPA: 3.2,
+    program: "CIT"
+    };
+    let students = [student1, student2, student3];
+
+    for (let stud of students){
+        if (stud.program === "CIT" && stud.GPA > 3){
+            console.log(stud)
+        }
+    }
